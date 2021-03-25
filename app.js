@@ -7,7 +7,7 @@ var button= document.querySelector('.submit');
 
 
 button.addEventListener('click', function(name){
-fetch('http://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=8222f4bb16d5c090c2f3581145a64476')
+fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=8222f4bb16d5c090c2f3581145a64476')
 .then(response => response.json())
 .then(data => {
   var tempValue = data['main']['temp'];
